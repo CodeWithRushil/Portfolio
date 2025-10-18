@@ -22,20 +22,20 @@ export default function Skills() {
   const [experiences] = useState([
     {
       id: 1,
-      company: "Upwork",
-      role: "Freelancer ",
-      period: "January 2024 – Present",
+      company: "Hustlee",
+      role: "Full Stack Developer ",
+      period: "August 2025 – Present",
       description:
-        "Managed multiple projects simultaneously, adhering to deadlines and ensuring high-quality deliverables within agreed-upon timelines. Optimized websites for performance and SEO, improving page load times and search engine rankings to enhance online visibility. Emphasized strong communication and collaboration skills to ensure client satisfaction.",
+        "Contribute to a student-focused gig platform, handling both frontend and backend development to deliver high-quality features on time. Develop and integrate APIs with MongoDB to manage gigs, applications, and user data efficiently, while building responsive UI components to enhance user experience. Collaborate across the project lifecycle, from feature planning to deployment, ensuring smooth and effective full-stack development.",
       logo: "/assets/about-me.svg",
     },
     {
       id: 2,
-      company: "Web Dev Masters",
+      company: "Python Pulse",
       role: "Club Leader",
       period: "June 2023 – Dec. 2023",
       description:
-        "Planned and conducted regular coding sessions, focusing on web development topics, including HTML, CSS and JavaScript. Mentored 50+ club members by providing guidance on personal and group projects, helping them troubleshoot issues, and fostering a collaborative learning environment. Organized coding challenges and competitions, encouraging participation and improving members’ problem-solvingand coding skills",
+        "Planned and conducted regular coding sessions, focusing on Python Programming. Mentored 50+ club members by providing guidance on personal and group projects, helping them troubleshoot issues, and fostering a collaborative learning environment. Organized coding challenges and competitions, encouraging participation and improving members’ problem-solvingand coding skills",
       logo: "/assets/about-me.svg",
     },
   ]);

@@ -12,10 +12,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Vertex",
-    description: "A full-stack web application that enables users to list, browse, and purchase used tech products",
+    title: "CourseFlow",
+    description: "A full-stack web application that allows users to create, customize, and generate AI-powered courses with chapters, videos, and structured learning paths.",
     image: "/assets/project2.png",
-    link: "#"
+    link: "https://course-flow-rushil.vercel.app"
   }
 ];
 
