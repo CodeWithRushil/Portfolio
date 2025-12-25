@@ -37,9 +37,11 @@ export default function Home() {
                 sequence={[
                   'I am Rushil Sharma',
                   1000,
-                  'I am a Web Developer',
+                  'I code with purpose',
                   1000,
-                  'I turn ideas into code',
+                  'I build for impact',
+                  1000,
+                  'I keep improving',
                   1000,
                 ]}
                 speed={10}
