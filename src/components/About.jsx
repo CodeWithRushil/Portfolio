@@ -30,7 +30,7 @@ export default function About() {
         </p>
 
         <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          My web development journey started in 2024, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build cutting-edge web applications using React.js, Node.js, Express.js, MongoDB, TailwindCSS, and more.
+          My web development journey started in 2024, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build cutting-edge web applications using Next.js, React.js, Node.js, Express.js, MongoDB, TailwindCSS, and more.
         </p>
 
         <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">

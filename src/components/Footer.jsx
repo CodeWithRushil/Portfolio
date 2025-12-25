@@ -7,8 +7,8 @@ export default function Footer() {
       <img className='h-5 lg:h-9' src="/assets/signature.png" alt="Logo" />
 
       <div className='text-white lg:font-semibold lg:text-sm font-normal text-[10px] text-right lg:space-y-3'>
-        <p>&copy; {currentYear}. All rights reserved.</p>
-        <p>Made by: Rushil Sharma</p>
+        <p>&copy; {currentYear} Rushil Sharma.</p>
+        <p>All rights reserved.</p>
       </div>
     </div>
   )

@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaHtml5, FaGitAlt, FaCss3Alt } from "react-icons/fa";
-import { SiMongodb, SiExpress } from "react-icons/si";
-import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
-import { CgFigma } from "react-icons/cg";
+import { FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiDocker, SiTypescript } from "react-icons/si";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export default function Skills() {
   const [skills] = useState([
-    { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
-    { id: 2, name: "React", icon: <FaReact size={50} /> },
+    { id: 1, name: "Next.js", icon: <RiNextjsFill size={50} /> },
+    { id: 2, name: "React.js", icon: <FaReact size={50} /> },
     { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
-    { id: 4, name: "Git", icon: <FaGitAlt size={50} /> },
-    { id: 5, name: "MongoDB", icon: <SiMongodb size={50} /> },
-    { id: 6, name: "Express.js", icon: <SiExpress size={50} /> },
-    { id: 7, name: "HTML5", icon: <FaHtml5 size={50} /> },
-    { id: 8, name: "CSS3", icon: <FaCss3Alt size={50} /> },
-    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
+    { id: 4, name: "Express.js", icon: <SiExpress size={50} /> },
+    { id: 5, name: "TypeScript", icon: <SiTypescript size={50} /> },
+    { id: 6, name: "MongoDB", icon: <SiMongodb size={50} /> },
+    { id: 7, name: "JavaScript", icon: <FaJs size={50} /> },
+    { id: 8, name: "Git", icon: <FaGitAlt size={50} /> },
+    { id: 9, name: "Docker", icon: <SiDocker size={50} /> },
+    { id: 10, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
   ]);
 
   const [experiences] = useState([
@@ -27,23 +26,22 @@ export default function Skills() {
       period: "August 2025 – Present",
       description:
         "Contribute to a student-focused gig platform, handling both frontend and backend development to deliver high-quality features on time. Develop and integrate APIs with MongoDB to manage gigs, applications, and user data efficiently, while building responsive UI components to enhance user experience. Collaborate across the project lifecycle, from feature planning to deployment, ensuring smooth and effective full-stack development.",
-      logo: "/assets/about-me.svg",
+      logo: "/assets/hustlee.png",
     },
     {
       id: 2,
-      company: "Python Pulse",
-      role: "Club Leader",
-      period: "June 2023 – Dec. 2023",
+      company: "WormHumus",
+      role: "Freelance Web Developer",
+      period: "November 2025",
       description:
-        "Planned and conducted regular coding sessions, focusing on Python Programming. Mentored 50+ club members by providing guidance on personal and group projects, helping them troubleshoot issues, and fostering a collaborative learning environment. Organized coding challenges and competitions, encouraging participation and improving members’ problem-solvingand coding skills",
-      logo: "/assets/about-me.svg",
+        "Designed and developed a premium, multi-page website for WormHumus, a sustainable agriculture brand focused on herbal-fed vermicast. Led the project end-to-end — from content structuring and UI/UX design to responsive frontend development and form integrations. Implemented a clean, modern design system aligned with the brand’s sustainability values, optimized layouts for mobile and desktop, and ensured smooth navigation across multiple pages. Collaborated closely with the client to translate business goals into a professional, production-ready web presence.",
+      logo: "/assets/wormHumus.png",
     },
   ]);
 
   return (
     <div className="mt-3 lg:mt-16" id="skills">
       <div className="px-5 lg:px-28">
-
         <motion.h2
           className="text-2xl lg:text-4xl text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -62,7 +60,11 @@ export default function Skills() {
               className="bg-white border-2 hover:bg-black hover:text-white transition-all cursor-pointer border-black rounded p-3 h-36 w-36 lg:h-44 lg:w-44 flex flex-col items-center justify-center gap-5"
               initial={{ opacity: 0, y: 5 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: skill.id * 0.1 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: skill.id * 0.1,
+              }}
               viewport={{ once: true }}
             >
               {skill.icon}
@@ -70,7 +72,6 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-
       </div>
 
       {/* Experience Section */}
@@ -118,7 +119,6 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-
       </div>
     </div>
   );

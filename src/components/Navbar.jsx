@@ -32,8 +32,9 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`fixed lg:px-28 px-5 top-0 left-0 w-full z-50 bg-white p-5 transition-shadow duration-300 ${hasShadow ? "shadow-md" : "shadow-none"
-        }`}
+      className={`fixed lg:px-28 px-5 top-0 left-0 w-full z-50 bg-white p-5 transition-shadow duration-300 ${
+        hasShadow ? "shadow-md" : "shadow-none"
+      }`}
     >
       <div className="container mx-auto flex justify-between items-center">
         <motion.img
@@ -64,13 +65,14 @@ export default function Navbar() {
         </ul>
 
         <motion.a
-          href=""
+          href="https://drive.google.com/file/d/1GY3NqtNEqV-VvqYL5hI4qNcXmjjm3wbH/view?usp=sharing"
+          target="_blank"
           className="hidden relative lg:inline-block px-4 py-2 font-medium group"
         >
           <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
           <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
           <span className="relative text-black group-hover:text-white flex items-center gap-x-3">
-            <a href="https://drive.google.com/file/d/1GY3NqtNEqV-VvqYL5hI4qNcXmjjm3wbH/view?usp=sharing" target="_blank" className="relative text-black group-hover:text-white flex items-center gap-x-3">Resume</a> <TbDownload size={16} />
+            Resume <TbDownload size={16} />
           </span>
         </motion.a>
 
@@ -112,14 +114,15 @@ export default function Navbar() {
                 </motion.li>
               ))}
               <motion.a
-                href=""
+                href="https://drive.google.com/file/d/1GY3NqtNEqV-VvqYL5hI4qNcXmjjm3wbH/view?usp=sharing"
+                target="_blank"
                 className="relative inline-block px-4 py-2 font-semibold group"
                 whileHover={{ scale: 1.1 }}
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                 <span className="relative text-black group-hover:text-white flex items-center gap-x-3">
-                  <a href="https://drive.google.com/file/d/1GY3NqtNEqV-VvqYL5hI4qNcXmjjm3wbH/view?usp=sharing" target="_blank" className="relative text-black group-hover:text-white flex items-center gap-x-3">Resume</a> <TbDownload size={16} />
+                  Resume <TbDownload size={16} />
                 </span>
               </motion.a>
             </ul>

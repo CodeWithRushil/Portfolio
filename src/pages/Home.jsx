@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
+import { IoLogoLinkedin} from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
@@ -36,10 +37,10 @@ export default function Home() {
                 sequence={[
                   'I am Rushil Sharma',
                   1000,
-                  // 'I am a Web Developer',
-                  // 1000,
-                  // 'I am a UI/UX Designer',
-                  // 1000,
+                  'I am a Web Developer',
+                  1000,
+                  'I turn ideas into code',
+                  1000,
                 ]}
                 speed={10}
                 style={{ fontWeight:600 }}
@@ -75,7 +76,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
+            {[BiLogoGmail, IoLogoLinkedin, FaXTwitter, BsGithub].map((Icon, index) => (
               <motion.a
                 key={index}
                 href={contactLinks[index]}
