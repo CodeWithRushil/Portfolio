@@ -37,7 +37,7 @@ export default function Home() {
                 sequence={[
                   'I am Rushil Sharma',
                   1000,
-                  'I code with purpose',
+                  'I code with intent',
                   1000,
                   'I build for impact',
                   1000,
