@@ -10,9 +10,10 @@ import CustomCursor from "./utils/CursorAnimation";
 import { Toaster } from "react-hot-toast";
 
 export default function App() {
+  const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
   return (
     <div className="font-sora scroll-smooth overflow-x-hidden">
-      <CustomCursor />
+      {isDesktop && <CustomCursor />}
       <Toaster
         position="bottom-center"
         toastOptions={{

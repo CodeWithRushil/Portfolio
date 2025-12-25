@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function CustomCursor() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const [cursorSize, setCursorSize] = useState(32); // Default size
+  const [cursorSize, setCursorSize] = useState(32);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -11,14 +11,13 @@ export default function CustomCursor() {
     };
 
     const handleMouseOverText = () => {
-      setCursorSize(80); // Increase cursor size when hovering over text
+      setCursorSize(80);
     };
 
     const handleMouseLeaveText = () => {
-      setCursorSize(32); // Reset cursor size when leaving text
+      setCursorSize(32);
     };
 
-    // Select all text elements
     const textElements = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6");
 
     textElements.forEach((el) => {
