@@ -49,7 +49,7 @@ export default function Projects() {
             viewport={{ once: true }}
           >
             <div className="lg:w-[500px] w-full rounded-2xl overflow-hidden">
-              <a href={project.link} rel="noopener noreferrer">
+              <a href={project.link} rel="noopener noreferrer" target="_blank">
                 <img
                   className="w-full h-full hover:scale-105 transition-all duration-500 cursor-pointer object-cover"
                   src={project.image}

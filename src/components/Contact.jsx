@@ -1,13 +1,27 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
-import { FaPhone } from "react-icons/fa6";
 
 export default function Contact() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    website: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -20,17 +34,20 @@ export default function Contact() {
 
       if (res.ok) {
         alert("Message sent!");
-        setFormData({ name: "", email: "", website: "", message: "" });
+        setFormData({
+          name: "",
+          email: "",
+          website: "",
+          message: "",
+        });
       } else {
         alert("Failed to send message");
       }
-    } catch {
+    } catch (err) {
       alert("Something went wrong");
     }
   };
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
   const contactLinks = [
     "mailto:workwithrushil@gmail.com",
     "https://linkedin.com/in/codewithrushil",
@@ -68,26 +85,42 @@ export default function Contact() {
             className="w-full space-y-3 lg:space-y-5"
           >
             <input
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               className="border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full"
               type="text"
               placeholder="Your name"
               required
             />
+
             <input
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               className="border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full"
               type="email"
               placeholder="Email"
               required
             />
+
             <input
+              name="website"
+              value={formData.website}
+              onChange={handleChange}
               className="border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full"
               type="text"
               placeholder="Your website (If exists)"
             />
+
             <textarea
-              className="resize-none border-2 px-5 py-3 h-32 border-black placeholder:text-[#71717A]  rounded text-sm w-full"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="resize-none border-2 px-5 py-3 h-32 border-black placeholder:text-[#71717A] rounded text-sm w-full"
               placeholder="How can I help?"
-            ></textarea>
+              required
+            />
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -117,6 +150,7 @@ export default function Contact() {
                       }}
                       whileTap={{ scale: 0.9 }}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
                     </motion.a>
@@ -167,7 +201,7 @@ export default function Contact() {
             <motion.a
               whileHover={{ x: 5 }}
               className="flex items-center gap-2 group"
-              href="tele:9086126676"
+              href="tel:9086126676"
             >
               <span className="border-2 transition-all border-transparent group-hover:border-black rounded-full p-[5px]">
                 <FaPhone className="w-3 h-3 lg:w-4 lg:h-4" />
