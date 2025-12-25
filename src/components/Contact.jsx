@@ -5,6 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaXTwitter, FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const ref = useRef(null);
@@ -17,6 +18,7 @@ export default function Contact() {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -24,6 +26,9 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
+    const toastId = toast.loading("Sending message...");
 
     try {
       const res = await fetch("/api/sendMail", {
@@ -33,7 +38,7 @@ export default function Contact() {
       });
 
       if (res.ok) {
-        alert("Message sent!");
+        toast.success("Message sent successfully!", { id: toastId });
         setFormData({
           name: "",
           email: "",
@@ -41,10 +46,12 @@ export default function Contact() {
           message: "",
         });
       } else {
-        alert("Failed to send message");
+        toast.error("Failed to send message", { id: toastId });
       }
     } catch (err) {
-      alert("Something went wrong");
+      toast.error("Something went wrong", { id: toastId });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -133,7 +140,7 @@ export default function Contact() {
                 type="submit"
                 className="bg-black justify-center w-fit lg:w-auto lg:flex-1 hover:shadow-lg text-white px-3 py-2 rounded flex items-center gap-x-3 font-medium"
               >
-                Get In Touch
+                {loading ? "Sending..." : "Get In Touch"}
               </motion.button>
 
               <div className="flex items-center mt-6 lg:mt-0 gap-x-2 lg:gap-x-5">
