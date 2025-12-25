@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       subject: `New message from ${name}`,
       html: `
   <div style="font-family: Arial, sans-serif; max-width: 600px;">
-    <h2 style="margin-bottom: 16px;">📩 New Contact Message</h2>
+    <h2 style="margin-bottom: 16px;">New Contact Message</h2>
 
     <table
       width="100%"
