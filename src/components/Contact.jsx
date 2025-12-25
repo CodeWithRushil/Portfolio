@@ -136,7 +136,7 @@ export default function Contact() {
                 Get In Touch
               </motion.button>
 
-              <div className="flex items-center gap-x-2 lg:gap-x-5">
+              <div className="flex items-center mt-6 lg:mt-0 gap-x-2 lg:gap-x-5">
                 {[BiLogoGmail, IoLogoLinkedin, FaXTwitter, BsGithub].map(
                   (Icon, index) => (
                     <motion.a
@@ -167,7 +167,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="lg:w-1/2"
         >
-          <div className="font-extrabold text-2xl lg:text-5xl mt-5 lg:mt-0 space-y-1 lg:space-y-3">
+          <div className="font-extrabold text-2xl lg:text-5xl mt-16 lg:mt-0 space-y-1 lg:space-y-3">
             <h2>
               Let's{" "}
               <span
