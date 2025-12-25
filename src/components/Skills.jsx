@@ -12,8 +12,8 @@ export default function Skills() {
     { id: 4, name: "Express.js", icon: <SiExpress size={50} /> },
     { id: 5, name: "TypeScript", icon: <SiTypescript size={50} /> },
     { id: 6, name: "MongoDB", icon: <SiMongodb size={50} /> },
-    { id: 7, name: "JavaScript", icon: <FaJs size={50} /> },
-    { id: 8, name: "Git", icon: <FaGitAlt size={50} /> },
+    { id: 7, name: "Git", icon: <FaGitAlt size={50} /> },
+    { id: 8, name: "JavaScript", icon: <FaJs size={50} /> },
     { id: 9, name: "Docker", icon: <SiDocker size={50} /> },
     { id: 10, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
   ]);
