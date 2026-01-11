@@ -13,10 +13,18 @@ const projects = [
   },
   {
     id: 2,
+    title: "CourseFlow",
+    description:
+      "An AI-powered course creation platform that helps users design structured learning paths, generate course layouts, and manage content efficiently from a single dashboard.",
+    image: "/assets/project2.png",
+    link: "https://www.courseflow.tech",
+  },
+  {
+    id: 3,
     title: "LinkedInk",
     description:
       "A one-stop AI tool to create polished LinkedIn posts and hashtags, designed to help users grow their personal brand faster with minimal effort.",
-    image: "/assets/project2.png",
+    image: "/assets/project3.png",
     link: "https://linkedink.vercel.app",
   },
 ];
