@@ -25,7 +25,7 @@ export default function Skills() {
       role: "Full Stack Developer ",
       period: "August 2025 – Present",
       description:
-        "Contribute to a student-focused gig platform, handling both frontend and backend development to deliver high-quality features on time. Develop and integrate APIs with MongoDB to manage gigs, applications, and user data efficiently, while building responsive UI components to enhance user experience. Collaborate across the project lifecycle, from feature planning to deployment, ensuring smooth and effective full-stack development.",
+        "Contributed to a student-focused gig platform, handling both frontend and backend development to deliver high-quality features on time. Develop and integrate APIs with MongoDB to manage gigs, applications, and user data efficiently, while building responsive UI components to enhance user experience. Collaborate across the project lifecycle, from feature planning to deployment, ensuring smooth and effective full-stack development.",
       logo: "/assets/hustlee.png",
     },
     {
