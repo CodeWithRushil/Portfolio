@@ -1,2 +1,2 @@
 # Portfolio Website
-Made by: Rushil Sharma
+Developer: Rushil Sharma
