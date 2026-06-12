@@ -9,7 +9,7 @@ const projects = [
     description:
       "A brand-focused website built to present premium herbal-fed vermicast for landscaping, agriculture, and sustainability projects across the GCC.",
     image: "/assets/project1.png",
-    link: "https://www.wormhumusindia.com",
+    link: "https://wormhumus.vercel.app",
   },
   {
     id: 2,
