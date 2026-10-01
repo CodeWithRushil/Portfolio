@@ -32,7 +32,7 @@ export default function Skills() {
       id: 2,
       company: "Hustlee",
       role: "Full Stack Developer",
-      period: "August 2025 – Present",
+      period: "July 2025 – December 2025",
       description:
         "Contributed to a student-focused gig platform, handling both frontend and backend development to deliver high-quality features on time. Developed and integrated APIs with MongoDB to manage gigs, applications, and user data efficiently, while building responsive UI components to enhance user experience. Collaborated across the project lifecycle, from feature planning to deployment, ensuring smooth and effective full-stack development.",
       logo: "/assets/hustlee.png",
