@@ -116,7 +116,7 @@ export default function Navbar() {
                 </motion.li>
               ))}
               <motion.a
-                href="https://drive.google.com/file/d/1komBP8-b591TEMXo2uJ7R2gEayDPD_UI/view?usp=sharing"
+                href="https://drive.google.com/file/d/1grN4iwg0Xey-sVY1w-huX4rvNqQyAzJv/view?usp=sharing"
                 target="_blank"
                 className="relative inline-block px-4 py-2 font-semibold group"
                 whileHover={{ scale: 1.1 }}
