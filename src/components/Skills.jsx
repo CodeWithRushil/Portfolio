@@ -21,20 +21,29 @@ export default function Skills() {
   const [experiences] = useState([
     {
       id: 1,
-      company: "Hustlee",
-      role: "Full Stack Developer ",
-      period: "August 2025 – Present",
+      company: "Safar Wanderlust",
+      role: "Full Stack Developer",
+      period: "January 2026 – July 2026",
       description:
-        "Contributed to a student-focused gig platform, handling both frontend and backend development to deliver high-quality features on time. Develop and integrate APIs with MongoDB to manage gigs, applications, and user data efficiently, while building responsive UI components to enhance user experience. Collaborate across the project lifecycle, from feature planning to deployment, ensuring smooth and effective full-stack development.",
-      logo: "/assets/hustlee.png",
+        "Built a full-stack travel platform with itinerary browsing and booking features, enabling seamless trip planning for 100+ users. Developed a CRM system to manage 200+ leads, bookings, and customer interactions, streamlining tracking and operational efficiency. Implemented REST APIs and MongoDB schemas to manage itineraries, bookings, and user data, ensuring scalable and reliable data flow. Engineered responsive UI components and booking workflows, enhancing user experience and reducing interaction friction by 30%.",
+      logo: "/assets/safar.png",
     },
     {
       id: 2,
+      company: "Hustlee",
+      role: "Full Stack Developer",
+      period: "August 2025 – Present",
+      description:
+        "Contributed to a student-focused gig platform, handling both frontend and backend development to deliver high-quality features on time. Developed and integrated APIs with MongoDB to manage gigs, applications, and user data efficiently, while building responsive UI components to enhance user experience. Collaborated across the project lifecycle, from feature planning to deployment, ensuring smooth and effective full-stack development.",
+      logo: "/assets/hustlee.png",
+    },
+    {
+      id: 3,
       company: "WormHumus",
       role: "Freelance Web Developer",
       period: "November 2025",
       description:
-        "Designed and developed a premium, multi-page website for WormHumus, a sustainable agriculture brand focused on herbal-fed vermicast. Led the project end-to-end — from content structuring and UI/UX design to responsive frontend development and form integrations. Implemented a clean, modern design system aligned with the brand’s sustainability values, optimized layouts for mobile and desktop, and ensured smooth navigation across multiple pages. Collaborated closely with the client to translate business goals into a professional, production-ready web presence.",
+        "Designed and developed a premium, multi-page website for WormHumus, a sustainable agriculture brand focused on herbal-fed vermicast. Led the project end-to-end, from content structuring and UI/UX design to responsive frontend development and form integrations. Implemented a clean, modern design system aligned with the brand's sustainability values, optimized layouts for mobile and desktop, and ensured smooth navigation across multiple pages. Collaborated closely with the client to translate business goals into a professional, production-ready web presence.",
       logo: "/assets/wormHumus.png",
     },
   ]);
